@@ -4,7 +4,7 @@ import Message from "./Message"
 import "../style/messages.css"
 function Messages({messages,name}) {
     return (
-        <ScrollToBottom>
+        <ScrollToBottom className="messages">
 {messages.map((message,i)=> <div key={i}><Message name={name} message={message}/></div> )}
         </ScrollToBottom>
     )
