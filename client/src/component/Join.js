@@ -28,7 +28,7 @@ function Join() {
           />
         </div>
         <Link
-          onClick={(e) => (!name || !room ? e.preventDefault() : null)}
+          onClick={(e) => ((!name || !room)&& e.preventDefault())}
           to={`/chat?name=${name}&room=${room}`}
         >
           <button className="button mt-20" type="submit">
