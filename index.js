@@ -51,7 +51,7 @@ io.on("connection", (socket) => {
         text: `${user.name}, has left.`,
       });
     io.to(user.room).emit("roomData", {
-      room: use.room,
+      room: user.room,
       users: getUserInRoom(user.room),
     });
   });
